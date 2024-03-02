@@ -1,0 +1,105 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efeee7;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #333333;
+}
+
+header {
+  background-color: #815b07;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+h1, h2, h3, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+h1 {
+  color: #eee;
+  font-size: 28px;
+}
+
+h2, h3 {
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+strong {
+  color: #000;
+}
+
+/* Link styles */
+a {
+  color: #d21034;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #815b07;
+  background-color: #efeee7;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* Layout and containers */
+.bio-container, .youtube-container, .project-images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.bio-image img, .project-images img, .youtube-container iframe {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #fafafa;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+ul.footer-contact-info {
+  list-style: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bio-container, .youtube-container, .project-images {
+      flex-direction: column;
+  }
+
+  nav a {
+      display: block;
+      margin: 10px 0;
+  }
+}
