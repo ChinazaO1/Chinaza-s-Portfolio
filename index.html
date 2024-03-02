@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinaza's Portfolio</title>
+    <link rel="stylesheet" href="./style-bio.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-mycraft.css">
+    <link rel="stylesheet" href="./style-resume.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <a href="first-index.html">Go to Home</a>
+    <header>
+        <h1><i>Chinaza's Portfolio</i></h1>
+        <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#my-craft">My Craft</a>
+            <a href="#resume">Resume</a>
+            <a href="#youtube-videos">YouTube Videos</a>
+            <a href="#contact-me">Contact Me</a>
+        </nav>
+    </header>
+
+    <div class="bio-container">
+        <section id="about-me" class="bio-section">
+            <h2><i>About Chinaza O</i></h2>
+            <div class="bio-image">
+                <img src="pics1.jpeg" alt="Chinaza" class="square-image">
+            </div>
+            <section id="about-me" class="about-me-section">
+                <div class="container">
+                    <h2>Welcome to My Space</h2>
+                    <p>Welcome, and thank you for visiting. My name is <strong>Chinaza</strong>, a vibrant early-career professional woven from a tapestry of skills spanning web development, business analysis, photography, and content creation.</p>
+                    <p>Driven by an insatiable passion for technology and the arts, my career is a journey of perpetual learning and exploration, pushing the boundaries of what I can create and achieve.</p>
+                    <p>As a web developer, I specialize in designing responsive, intuitive websites that cater to the needs of users and clients alike. My background in business analysis allows me to decipher complex business challenges, crafting strategic solutions that drive success.</p>
+                    <p>Through the lens of my camera, I capture the ephemeral beauty and narratives that our world offers, telling stories that might otherwise be left untold.</p>
+                    <p>As a content creator, I engage audiences with material that not only entertains but also informs and inspires, bridging gaps across diverse platforms.</p>
+                    <p>My portfolio is a testament to my dedication to innovation, creativity, and excellence. It's a curated collection of my endeavors, each project a chapter of my journey towards making a significant impact.</p>
+                    <p>I am eager to collaborate, learn, and grow alongside like-minded individuals and teams. Let's connect and forge something remarkable together.</p>
+                    <p>My journey is not just about showcasing my talents but about making a meaningful contribution to the world. I am thrilled about the path ahead and invite you to join me on this exciting adventure.</p>
+                </div>
+            </section>
+            
+        </section>
+
+        <section id="my-craft" class="my-craft-section">
+            <h2><i>My Craft</i></h2>
+            <p><i><h3>Here are some of my shots</h3></i></p>
+            <div class="project-images">
+                <a href="placeholder-project.html" target="_blank">
+                    <img src="pics2.png" alt="Project 1" class="featured-image">
+                </a>
+                <a href="placeholder-project.html" target="_blank">
+                    <img src="pics6.jpg" alt="Project 2">
+                </a>
+                <a href="placeholder-project.html" target="_blank">
+                    <img src="pics7.JPG" alt="Project 3">
+                </a>
+                <a href="placeholder-project.html" target="_blank">
+                    <img src="pics5.jpg" alt="Project 4">
+                </a>
+            </div>
+        </section>
+
+        <section id="resume" class="resume-section">
+            <h2><i>Resume</i></h2>
+            <div class="experiences">
+                <h3>Experiences</h3>
+                <ul>
+                    <li>Entry Level Web Developer - DTTP Hackathon (2024) </li>
+                    <li>Photographer and Creative Director - COO Creative Inc. (Current)</li>
+                    <li>Business Analyst - SkillHat (2022)</li>
+                    <li>Content Creator - Adonia Beauty (2021)</li>
+                    <li>Office Administrator - RCCG COG</li>
+                </ul>
+            </div>
+
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Creative Directing</li>
+                    <li>Project Management</li>
+                    <li>Photo & Video Editing Expert</li>
+                  <li>Adobe Photoshop & Lightroom Expert</li>
+                  <li>Html,CSS & Javascript</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- YouTube Videos Section -->
+        <section id="youtube-videos" class="youtube-section">
+            <h2><i>YouTube Videos</i></h2>
+            <div class="youtube-container">
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/FmOPVHJXLbQ" frameborder="0"
+                    allowfullscreen></iframe>
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/-NXAsHhEVH4" frameborder="0"
+                    allowfullscreen></iframe>
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/U2KP030Lwzg" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+     
+
+    </div>
+
+    <footer>
+        <ul class="footer-contact-info">
+            <li><strong>Contact Chinaza:</strong> <a href="contact-us.html">Click Here</a></li>
+            <li><strong>Github:</strong> <a href="https://github.com/ChinazaO1" target="_blank">ChinazaO1</a></li>
+            <li><strong>Portfolio:</strong> <a href="#">Coming Soon</a></li>
+        </ul>
+        <p>&copy; Chinaza 2024</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<script>
+    $(document).ready(function(){
+      $("#project1").click(function(){
+        $("#project-detail").load("project1-details.html");
+      });
+    });
+    </script>
+    <script>
+        $(document).ready(function(){
+          $(".project-images img").click(function(){
+            var src = $(this).attr("src");
+            $("body").append("<div class='img-modal'><span class='close'>&times;</span><img src='" + src + "'></div>");
+            $(".img-modal").click(function(){
+              $(this).remove();
+            });
+          });
+        });
+        </script>
+<script>
+    $(document).ready(function(){
+      $(".skills li").hover(function(){
+        $(this).animate({
+          fontSize: "1.2em"
+        }, 200);
+      }, function(){
+        $(this).animate({
+          fontSize: "1em"
+        }, 200);
+      });
+    });
+    </script>
+
+<script>
+    $(document).ready(function(){
+      $(".experiences li").hover(function(){
+        $(this).animate({
+          fontSize: "1.2em"
+        }, 200);
+      }, function(){
+        $(this).animate({
+          fontSize: "1em"
+        }, 200);
+      });
+    });
+    </script>
+            
+
+</body>
+
+</html>
